@@ -7,6 +7,90 @@
     <title>Survey From microverse</title>
 </head>
 <body>
-    <h1>Hello world!</h1>
+    <main>
+        <div class="form-intro">
+            <h1 class="intro-title">Microverse Survey Form</h1>
+            <p class="intro-desc">
+                Thank you for taking the time to help us improve the platform
+            </p>
+        </div>
+        <form action="/">
+           <div class="form-input-group">
+            <label for="name">Name</label>
+            <input type="text">
+           </div>
+           <div class="form-input-group">
+            <label for="email">Email</label>
+            <input type="text">
+           </div>
+           <div class="form-input-group">
+            <label for="age">Age</label>
+            <input type="text">
+           </div>
+           <div class="form-input-group">
+           
+                <p>Which option best describes your current role?</p>
+                <select id="dropdown" name="role" class="current-role-select-form" required="">
+                  <option disabled="" selected="" value="">Select current role</option>
+                  <option value="student">Student</option>
+                  <option value="job">Full Time Job</option>
+                  <option value="learner">Full Time Learner</option>
+                  <option value="preferNo">Prefer not to say</option>
+                  <option value="other">Other</option>
+                </select>
+             
+           </div>
+           <div class="form-input-group">
+
+                <p>Would you recommend freeCodeCamp to a friend?</p>
+                <label>
+                  <input type="radio" class="input-radio" checked="">Definitely</label>
+                <label>
+                  <input  type="radio" class="input-radio">Maybe</label>
+     
+                <label><input type="radio" class="input-radio">Not sure</label>
+             
+           </div>
+           <div class="form-input-group">
+                <p>What is your favorite feature of freeCodeCamp?</p>
+                <select  class="favorite-select" required="">
+                  <option disabled="" selected="" value="">Select an option</option>
+                  <option value="challenges">Challenges</option>
+                  <option value="projects">Projects</option>
+                  <option value="community">Community</option>
+                  <option value="openSource">Open Source</option>
+                </select>
+           </div>
+           <div class="form-input-group">
+                <p>
+                  What would you like to see improved?
+                </p>
+     
+                <label><input  value="front-end-projects" type="checkbox" class="input-checkbox">Front-end Projects</label>
+                <label>
+                  <input  type="checkbox" class="projects-checkbox">Back-end Projects</label>
+                <label><input  type="checkbox" class="projects-checkbox">Data Visualization</label>
+                <label><input  type="checkbox" class="projects-checkbox">Challenges</label>
+                <label><input  type="checkbox" class="projects-checkbox">Open Source Community</label>
+                <label><input  type="checkbox" class="projects-checkbox">Gitter help rooms</label>
+                <label><input  type="checkbox" class="projects-checkbox">Videos</label>
+                <label><input  type="checkbox" class="projects-checkbox">City Meetups</label>
+                <label><input  type="checkbox" class="projects-checkbox">Wiki</label>
+                <label><input  type="checkbox" class="projects-checkbox">Forum</label>
+                <label><input  type="checkbox" class="projects-checkbox">Additional Courses</label>
+           
+           </div>
+           <div class="form-input-group">
+                <p>Any comments or suggestions?</p>
+                <textarea class="comments" placeholder="Enter your comment here..."></textarea>
+             
+           </div>
+           <div class="form-input-group">
+                <button type="submit" id="submit" class="submit-btn">
+                  Submit
+                </button>
+           </div>
+        </form>
+    </main>
 </body>
 </html>
